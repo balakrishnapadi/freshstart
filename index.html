@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshStart - Your Morning Fresh Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>FreshStart</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#delivery" class="nav-link">Delivery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Start Your Day Fresh</h1>
+            <p class="hero-subtitle">Get your breakfast essentials delivered fresh to your doorstep by 6 AM</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <span>Early Morning Delivery</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <span>100% Fresh & Natural</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <span>Healthy Choices</span>
+                </div>
+            </div>
+            <button class="cta-button" onclick="scrollToOrder()">
+                <i class="fas fa-shopping-cart"></i>
+                Pre-book Now
+            </button>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-truck"></i>
+                <span>Delivered by 6 AM</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About FreshStart</h2>
+                <p>Your trusted partner for fresh morning nutrition</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Choose FreshStart?</h3>
+                    <p>We believe that a healthy day starts with fresh, nutritious food. Our mission is to bring farm-fresh fruits, premium cereals, and wholesome breakfast essentials directly to your doorstep before you start your day.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h4>99%</h4>
+                            <p>On-time Delivery</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Fresh Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Section -->
+            <div class="team-section">
+                <div class="section-header">
+                    <h2>Meet Our Team</h2>
+                    <p>The passionate people behind FreshStart</p>
+                </div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Bharath Kumar</h3>
+                        <p class="member-position">Chief Executive Officer</p>
+                        <p class="member-description">Visionary leader with 10+ years in food industry, passionate about bringing fresh nutrition to every doorstep.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Sridhar</h3>
+                        <p class="member-position">Digital Marketing Head</p>
+                        <p class="member-description">Creative strategist driving our digital presence and connecting with customers through innovative marketing campaigns.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Bala Krishna</h3>
+                        <p class="member-position">IT Department Head</p>
+                        <p class="member-description">Tech expert ensuring seamless digital experience and innovative solutions for our delivery platform.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fresh Products</h2>
+                <p>Carefully selected for your morning nutrition</p>
+            </div>
+            <div class="product-categories">
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Fresh Fruits</h3>
+                    <p>Seasonal fruits picked at peak ripeness</p>
+                    <ul>
+                        <li>Organic Apples</li>
+                        <li>Fresh Bananas</li>
+                        <li>Seasonal Berries</li>
+                        <li>Citrus Fruits</li>
+                    </ul>
+                    <button class="category-btn">View Fruits</button>
+                </div>
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-bowl-food"></i>
+                    </div>
+                    <h3>Premium Cereals</h3>
+                    <p>Nutritious cereals for a healthy start</p>
+                    <ul>
+                        <li>Oatmeal Varieties</li>
+                        <li>Granola Mixes</li>
+                        <li>Muesli Options</li>
+                        <li>Protein Cereals</li>
+                    </ul>
+                    <button class="category-btn">View Cereals</button>
+                </div>
+                <div class="product-category">
+                    <div class="category-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Breakfast Boxes</h3>
+                    <p>Complete breakfast solutions</p>
+                    <ul>
+                        <li>Energy Boost Box</li>
+                        <li>Protein Power Box</li>
+                        <li>Family Breakfast Box</li>
+                        <li>Light & Fresh Box</li>
+                    </ul>
+                    <button class="category-btn">View Boxes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section id="delivery" class="delivery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Early Morning Delivery</h2>
+                <p>Fresh food delivered before your day begins</p>
+            </div>
+            <div class="delivery-content">
+                <div class="delivery-info">
+                    <div class="delivery-time">
+                        <i class="fas fa-clock"></i>
+                        <h3>Delivery by 6 AM</h3>
+                        <p>We ensure your fresh breakfast essentials arrive at your doorstep before you wake up, so you can start your day with the best nutrition.</p>
+                    </div>
+                    <div class="delivery-areas">
+                        <h4>Delivery Areas</h4>
+                        <div class="areas-grid">
+                            <span>Downtown</span>
+                            <span>Midtown</span>
+                            <span>Uptown</span>
+                            <span>Suburbs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-tracking">
+                    <h3>Track Your Delivery</h3>
+                    <div class="tracking-form">
+                        <input type="text" placeholder="Enter your order number" id="tracking-input">
+                        <button onclick="trackOrder()">Track Now</button>
+                    </div>
+                    <div class="tracking-status" id="tracking-status" style="display: none;">
+                        <div class="status-item active">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Order Confirmed</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Out for Delivery</span>
+                        </div>
+                        <div class="status-item">
+                            <i class="fas fa-home"></i>
+                            <span>Delivered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Plans -->
+    <section class="subscription">
+        <div class="container">
+            <div class="section-header">
+                <h2>Subscription Plans</h2>
+                <p>Choose the plan that fits your lifestyle</p>
+            </div>
+            <div class="plans">
+                <div class="plan">
+                    <h3>Weekly Fresh</h3>
+                    <div class="price">$15<span>/week</span></div>
+                    <ul>
+                        <li>Fresh fruits for 7 days</li>
+                        <li>2 cereal varieties</li>
+                        <li>Free delivery</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <button class="plan-btn">Choose Plan</button>
+                </div>
+                <div class="plan featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Monthly Complete</h3>
+                    <div class="price">$45<span>/month</span></div>
+                    <ul>
+                        <li>All fresh products</li>
+                        <li>Breakfast boxes included</li>
+                        <li>Priority delivery</li>
+                        <li>20% discount</li>
+                    </ul>
+                    <button class="plan-btn">Choose Plan</button>
+                </div>
+                <div class="plan">
+                    <h3>Family Feast</h3>
+                    <div class="price">$80<span>/month</span></div>
+                    <ul>
+                        <li>Extra large portions</li>
+                        <li>Family breakfast boxes</li>
+                        <li>Bulk discounts</li>
+                        <li>Custom preferences</li>
+                    </ul>
+                    <button class="plan-btn">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Pre-book Your Fresh Start</h2>
+                <p>Order now and wake up to fresh nutrition</p>
+            </div>
+            <form class="order-form-content" id="orderForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-date">Delivery Date</label>
+                        <input type="date" id="delivery-date" name="delivery-date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Select Products</label>
+                    <div class="product-selection">
+                        <div class="product-option">
+                            <input type="checkbox" id="fruits" name="products" value="fruits">
+                            <label for="fruits">Fresh Fruits ($8)</label>
+                        </div>
+                        <div class="product-option">
+                            <input type="checkbox" id="cereals" name="products" value="cereals">
+                            <label for="cereals">Premium Cereals ($12)</label>
+                        </div>
+                        <div class="product-option">
+                            <input type="checkbox" id="breakfast-box" name="products" value="breakfast-box">
+                            <label for="breakfast-box">Breakfast Box ($15)</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="delivery-time">Preferred Delivery Time</label>
+                    <select id="delivery-time" name="delivery-time" required>
+                        <option value="">Select time</option>
+                        <option value="5:00-5:30">5:00 AM - 5:30 AM</option>
+                        <option value="5:30-6:00">5:30 AM - 6:00 AM</option>
+                        <option value="6:00-6:30">6:00 AM - 6:30 AM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Special Instructions</label>
+                    <textarea id="notes" name="notes" rows="2" placeholder="Any special requests or dietary restrictions?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    Place Order
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-FRESH</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@freshstart.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Fresh Street<br>Green Valley, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon-Fri: 4:00 AM - 8:00 AM<br>Sat-Sun: 5:00 AM - 9:00 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>FreshStart</span>
+                    </div>
+                    <p>Your trusted partner for fresh morning nutrition. Start your day right with our premium fresh food delivery service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#delivery">Delivery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Fresh Fruits</a></li>
+                        <li><a href="#">Premium Cereals</a></li>
+                        <li><a href="#">Breakfast Boxes</a></li>
+                        <li><a href="#">Subscription Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreshStart. All rights reserved. | Fresh food delivered fresh every morning.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
