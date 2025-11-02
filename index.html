@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshStart - Your Morning Fresh Food Delivery</title>
+    <title>Anvidas - Your Morning Fresh Food Delivery</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +14,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-leaf"></i>
-                <span>FreshStart</span>
+                <span>Anvidas</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -67,12 +67,12 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About FreshStart</h2>
+                <h2>About Anvidas</h2>
                 <p>Your trusted partner for fresh morning nutrition</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Why Choose FreshStart?</h3>
+                    <h3>Why Choose Anvidas?</h3>
                     <p>We believe that a healthy day starts with fresh, nutritious food. Our mission is to bring farm-fresh fruits, premium cereals, and wholesome breakfast essentials directly to your doorstep before you start your day.</p>
                     <div class="about-stats">
                         <div class="stat">
@@ -100,7 +100,7 @@
             <div class="team-section">
                 <div class="section-header">
                     <h2>Meet Our Team</h2>
-                    <p>The passionate people behind FreshStart</p>
+                    <p>The passionate people behind Anvidas</p>
                 </div>
                 <div class="team-members">
                     <div class="team-member">
@@ -296,73 +296,234 @@
         </div>
     </section>
 
-    <!-- Order Form Section -->
-    <section id="order" class="order-form">
+    <!-- Monthly Plan Products Section -->
+    <section id="order" class="monthly-plan">
         <div class="container">
             <div class="section-header">
-                <h2>Pre-book Your Fresh Start</h2>
-                <p>Order now and wake up to fresh nutrition</p>
+                <h2>Monthly Fresh Plan</h2>
+                <p>Choose your healthy breakfast items for the entire month</p>
             </div>
-            <form class="order-form-content" id="orderForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+            
+            <div class="plan-info">
+                <div class="plan-highlight">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>One Month Subscription</h3>
+                    <p>Get fresh, healthy breakfast items delivered every morning for 30 days</p>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-item">
+                    <div class="product-image">
+                        <i class="fas fa-bread-slice"></i>
                     </div>
-                    <div class="form-group">
-                        <label for="delivery-date">Delivery Date</label>
-                        <input type="date" id="delivery-date" name="delivery-date" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="address">Delivery Address</label>
-                    <textarea id="address" name="address" rows="3" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label>Select Products</label>
-                    <div class="product-selection">
-                        <div class="product-option">
-                            <input type="checkbox" id="fruits" name="products" value="fruits">
-                            <label for="fruits">Fresh Fruits ($8)</label>
+                    <h3>Ragi Idly</h3>
+                    <p class="product-description">Soft, nutritious ragi idlies made with organic finger millet. Rich in calcium, iron, and fiber.</p>
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span>High in Iron & Calcium</span>
                         </div>
-                        <div class="product-option">
-                            <input type="checkbox" id="cereals" name="products" value="cereals">
-                            <label for="cereals">Premium Cereals ($12)</label>
+                        <div class="detail-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Organic</span>
                         </div>
-                        <div class="product-option">
-                            <input type="checkbox" id="breakfast-box" name="products" value="breakfast-box">
-                            <label for="breakfast-box">Breakfast Box ($15)</label>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Fresh Daily</span>
                         </div>
                     </div>
+                    <div class="product-pricing">
+                        <span class="price">$2.50</span>
+                        <span class="unit">per piece</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity (per day):</label>
+                        <select class="quantity-select">
+                            <option value="2">2 pieces</option>
+                            <option value="4" selected>4 pieces</option>
+                            <option value="6">6 pieces</option>
+                            <option value="8">8 pieces</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="delivery-time">Preferred Delivery Time</label>
-                    <select id="delivery-time" name="delivery-time" required>
-                        <option value="">Select time</option>
-                        <option value="5:00-5:30">5:00 AM - 5:30 AM</option>
-                        <option value="5:30-6:00">5:30 AM - 6:00 AM</option>
-                        <option value="6:00-6:30">6:00 AM - 6:30 AM</option>
-                    </select>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Ragi Java</h3>
+                    <p class="product-description">Nutritious ragi java drink, perfect morning energy booster with natural sweetness.</p>
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Energy Booster</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-seedling"></i>
+                            <span>Natural Sweetness</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Gluten Free</span>
+                        </div>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price">$1.50</span>
+                        <span class="unit">per cup</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity (per day):</label>
+                        <select class="quantity-select">
+                            <option value="1">1 cup</option>
+                            <option value="2" selected>2 cups</option>
+                            <option value="3">3 cups</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="notes">Special Instructions</label>
-                    <textarea id="notes" name="notes" rows="2" placeholder="Any special requests or dietary restrictions?"></textarea>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Fresh Fruits</h3>
+                    <p class="product-description">Seasonal fresh fruits including bananas, apples, oranges, and seasonal berries.</p>
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <i class="fas fa-sun"></i>
+                            <span>Seasonal Variety</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Vitamin Rich</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Farm Fresh</span>
+                        </div>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price">$3.00</span>
+                        <span class="unit">per serving</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity (per day):</label>
+                        <select class="quantity-select">
+                            <option value="1">1 serving</option>
+                            <option value="2" selected>2 servings</option>
+                            <option value="3">3 servings</option>
+                        </select>
+                    </div>
                 </div>
-                <button type="submit" class="submit-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                    Place Order
-                </button>
-            </form>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Fresh Sprouts</h3>
+                    <p class="product-description">Nutritious sprouts including moong, chana, and mixed sprouts. High in protein and vitamins.</p>
+                    <div class="product-details">
+                        <div class="detail-item">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>High Protein</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Live Enzymes</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-star"></i>
+                            <span>Superfood</span>
+                        </div>
+                    </div>
+                    <div class="product-pricing">
+                        <span class="price">$2.00</span>
+                        <span class="unit">per bowl</span>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity (per day):</label>
+                        <select class="quantity-select">
+                            <option value="1">1 bowl</option>
+                            <option value="2" selected>2 bowls</option>
+                            <option value="3">3 bowls</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Form -->
+            <div class="order-form-section">
+                <div class="section-header">
+                    <h2>Place Your Monthly Order</h2>
+                    <p>Fill in your details to start your healthy breakfast journey</p>
+                </div>
+                <form class="order-form-content" id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-date">Start Date</label>
+                            <input type="date" id="start-date" name="start-date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-time">Preferred Delivery Time</label>
+                        <select id="delivery-time" name="delivery-time" required>
+                            <option value="">Select time</option>
+                            <option value="5:00-5:30">5:00 AM - 5:30 AM</option>
+                            <option value="5:30-6:00">5:30 AM - 6:00 AM</option>
+                            <option value="6:00-6:30">6:00 AM - 6:30 AM</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Instructions</label>
+                        <textarea id="notes" name="notes" rows="2" placeholder="Any dietary restrictions or special requests?"></textarea>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-item">
+                            <span>Ragi Idly (4 pieces/day)</span>
+                            <span>$2.50 × 30 days = $75.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Ragi Java (2 cups/day)</span>
+                            <span>$1.50 × 30 days = $45.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Fresh Fruits (2 servings/day)</span>
+                            <span>$3.00 × 30 days = $90.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Fresh Sprouts (2 bowls/day)</span>
+                            <span>$2.00 × 30 days = $60.00</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total Monthly Cost:</span>
+                            <span>$270.00</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Start Monthly Plan
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -430,11 +591,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-leaf"></i>
-                        <span>FreshStart</span>
-                    </div>
-                    <p>Your trusted partner for fresh morning nutrition. Start your day right with our premium fresh food delivery service.</p>
+                <div class="footer-logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Anvidas</span>
+                </div>
+                <p>Your trusted partner for fresh morning nutrition. Start your day right with our premium fresh food delivery service.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -471,7 +632,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 FreshStart. All rights reserved. | Fresh food delivered fresh every morning.</p>
+                <p>&copy; 2024 Anvidas. All rights reserved. | Fresh food delivered fresh every morning.</p>
             </div>
         </div>
     </footer>

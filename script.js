@@ -91,7 +91,13 @@ function initOrderForm() {
     // Set minimum date to tomorrow
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    deliveryDateInput.min = tomorrow.toISOString().split('T')[0];
+    const startDateInput = document.getElementById('start-date');
+    if (startDateInput) {
+        startDateInput.min = tomorrow.toISOString().split('T')[0];
+    }
+    if (deliveryDateInput) {
+        deliveryDateInput.min = tomorrow.toISOString().split('T')[0];
+    }
 
     // Calculate total price
     function calculateTotal() {
@@ -219,8 +225,9 @@ function showOrderConfirmation(orderData) {
                     <p><strong>Total:</strong> $${orderData.total}</p>
                 </div>
                 <div class="confirmation-message">
-                    <p>Thank you for choosing FreshStart! Your fresh breakfast will be delivered to your doorstep by 6 AM.</p>
-                    <p>You'll receive a confirmation email shortly with tracking details.</p>
+                    <p>Thank you for choosing Anvidas! Your monthly fresh breakfast plan will start on ${formatDate(orderData.startDate || orderData.deliveryDate)}.</p>
+                    <p>You'll receive fresh ragi idly, ragi java, fruits, and sprouts delivered to your doorstep by 6 AM every morning for 30 days.</p>
+                    <p>You'll receive a confirmation email shortly with your subscription details.</p>
                 </div>
                 <button class="confirmation-btn" onclick="closeConfirmation()">Great!</button>
             </div>
@@ -425,7 +432,7 @@ function scrollToOrder() {
 }
 
 function generateOrderId() {
-    return 'FS' + Date.now().toString().slice(-6);
+    return 'AN' + Date.now().toString().slice(-6);
 }
 
 function formatDate(dateString) {

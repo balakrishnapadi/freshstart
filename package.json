@@ -1,0 +1,30 @@
+{
+  "name": "anvidas",
+  "version": "1.0.0",
+  "description": "Anvidas - Your Morning Fresh Food Delivery Service",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "serve": "npx http-server -p 8080",
+    "open": "start chrome http://localhost:8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "food-delivery",
+    "fresh-food",
+    "breakfast",
+    "healthy-food",
+    "monthly-plan"
+  ],
+  "author": "Anvidas Team",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balakrishnapadi/freshstart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/balakrishnapadi/freshstart/issues"
+  },
+  "homepage": "https://github.com/balakrishnapadi/freshstart#readme"
+}
