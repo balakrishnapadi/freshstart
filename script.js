@@ -225,7 +225,7 @@ function showOrderConfirmation(orderData) {
                     <p><strong>Total:</strong> $${orderData.total}</p>
                 </div>
                 <div class="confirmation-message">
-                    <p>Thank you for choosing Anvidas! Your monthly fresh breakfast plan will start on ${formatDate(orderData.startDate || orderData.deliveryDate)}.</p>
+                    <p>Thank you for choosing Vipra Pakashala! Your monthly fresh breakfast plan will start on ${formatDate(orderData.startDate || orderData.deliveryDate)}.</p>
                     <p>You'll receive fresh ragi idly, ragi java, fruits, and sprouts delivered to your doorstep by 6 AM every morning for 30 days.</p>
                     <p>You'll receive a confirmation email shortly with your subscription details.</p>
                 </div>

@@ -1,7 +1,7 @@
 {
-  "name": "anvidas",
+  "name": "vipra-pakashala",
   "version": "1.0.0",
-  "description": "Anvidas - Your Morning Fresh Food Delivery Service",
+  "description": "Vipra Pakashala - Your Morning Fresh Food Delivery Service",
   "main": "script.js",
   "scripts": {
     "start": "npx http-server -p 8080 -o",
@@ -16,7 +16,7 @@
     "healthy-food",
     "monthly-plan"
   ],
-  "author": "Anvidas Team",
+  "author": "Vipra Pakashala Team",
   "license": "ISC",
   "type": "commonjs",
   "repository": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/balakrishnapadi/freshstart/issues"
   },
-  "homepage": "https://github.com/balakrishnapadi/freshstart#readme"
+  "homepage": "https://github.com/balakrishnapadi/freshstart#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }

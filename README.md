@@ -1,6 +1,6 @@
-# 🍎 Anvidas - Fresh Morning Food Delivery
+# 🍎 Vipra Pakashala - Fresh Morning Food Delivery
 
-Anvidas is your trusted partner for fresh morning nutrition. We deliver healthy breakfast essentials including ragi idly, ragi java, fresh fruits, and sprouts directly to your doorstep before you start your day.
+Vipra Pakashala is your trusted partner for fresh morning nutrition. We deliver healthy breakfast essentials including ragi idly, ragi java, fresh fruits, and sprouts directly to your doorstep before you start your day.
 
 ## 🌟 Features
 
@@ -17,7 +17,7 @@ Anvidas is your trusted partner for fresh morning nutrition. We deliver healthy 
 ## 📁 Project Structure
 
 ```
-anvidas/
+vipra-pakashala/
 ├── index.html      # Main website page
 ├── styles.css      # Styling and design
 ├── script.js       # Interactive functionality
